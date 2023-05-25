@@ -11,12 +11,7 @@ file_path=$(find "$search_dir" -name "$filename" -print -quit)
 # Check if the file was found.
 if [ -n "$file_path" ]; then
     echo "File found at: $file_path"
-else
-    echo "File not found."
-fi
-
-#4. make the code for checking the end of the file after the dot (.) 
-if [[ $filename == *.* ]]; then
+    if [[ $filename == *.* ]]; then
     echo "file"
     ext="${filename##*.}"
     echo "$ext"
@@ -24,3 +19,6 @@ else
     echo "dir"
 fi
 
+else
+    echo "File not found."
+fi
