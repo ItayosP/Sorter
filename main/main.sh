@@ -1,24 +1,26 @@
 #!/bin/bash
 
-# Name of the file youre searching for
+echo "enter the file name you want to sort"
 read filename
 
-# Directory where you want to start the search
+echo "enter the full path of the file"
 read search_dir
 
-# Search for the file and retrieve its path
 file_path=$(find "$search_dir" -name "$filename" -print -quit)
 
-# Check if the file was found
+# Check if the file was found.
 if [ -n "$file_path" ]; then
     echo "File found at: $file_path"
 else
     echo "File not found."
 fi
 
-#cheking if its a file or directory
+#4. make the code for checking the end of the file after the dot (.) 
 if [[ $filename == *.* ]]; then
     echo "file"
+    ext="${filename##*.}"
+    echo "$ext"
 else
     echo "dir"
 fi
+
