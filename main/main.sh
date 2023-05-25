@@ -8,7 +8,7 @@ read search_dir
 
 file_path=$(find "$search_dir" -name "$filename" -print -quit)
 
-# Check if the file was found.
+# Check if the file was found and checking the end of the file after the dot (.) 
 if [ -n "$file_path" ]; then
     echo "File found at: $file_path"
     if [[ $filename == *.* ]]; then
