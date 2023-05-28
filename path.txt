@@ -1,1 +1,3 @@
+#!/bin/bash
 
+C:\\Users\\$(HOSTNAME)\\AppData\\Roaming\\Godot\\app_userdata\\FileSelectMenu\\path.txt
