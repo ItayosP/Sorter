@@ -1,7 +1,5 @@
 #!/bin/bash
 
-file=$(cat args.txt)
-
 search_dir=$(cat args.txt)
 
 # Check if the entered directory exists
