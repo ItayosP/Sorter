@@ -19,7 +19,7 @@ for file in "$search_dir"/*; do
         ext="${filename##*.}"
 
         # Exclude the sorting program file
-        if [ "$filename" != "version2.sh" ]; then
+        if [ "$filename" != "main.sh" ]; then
             # Create a directory for the extension if it doesn't exist
             if [ ! -d "$search_dir/$ext" ]; then
                 mkdir "$search_dir/$ext"
