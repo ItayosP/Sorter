@@ -1,3 +1,2 @@
-#!/bin/bash
-
-C:\\Users\\$(HOSTNAME)\\AppData\\Roaming\\Godot\\app_userdata\\FileSelectMenu\\path.txt
+#write here your full path you want to sort
+#delete this 2 lines
